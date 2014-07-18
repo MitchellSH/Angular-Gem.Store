@@ -1,0 +1,22 @@
+img{
+  border: 3px solid #E600A8;
+  border-radius: 130px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #F8F8F8;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: #fff;
+  background-color: #E600A8;
+}
+
+a {
+  color: #E600A8;
+  text-decoration: none;
+}
+
+em{
+  font-size: 90px;
+  letter-spacing: 7px;
+}
