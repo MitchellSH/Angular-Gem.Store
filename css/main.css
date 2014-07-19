@@ -20,3 +20,19 @@ em{
   font-size: 90px;
   letter-spacing: 7px;
 }
+
+
+.ng-invalid.ng-dirty{
+  border-color: red !important;
+}
+.ng-valid.ng-dirty{
+  border-color: green !important;
+}
+
+.input-group{
+  width: 20%;
+}
+
+.btn.btn-default{
+  display: block !important;
+}

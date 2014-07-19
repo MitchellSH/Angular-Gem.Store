@@ -14,10 +14,20 @@
 
     };
 
-    this.isSelected = function(checkTab ){
+    this.isSelected = function(checkTab){
       return this.tab === checkTab;
     };
 
+  });
+
+  app.controller('ReviewController', function(){
+      this.review = {};
+
+      this.addReview = function(product){
+        this.review.createdOn = Date.now();
+        product.reviews.push(this.review);
+        this.review = {};
+      };
   });
 
 
@@ -30,6 +40,18 @@
       {
         full: 'images/gem-09.gif'
       }
+      ],
+      reviews: [
+      {
+        stars: 5,
+        body: "I love this gem!",
+        author: "joe@thomas.com"
+      },
+      {
+        stars: 4,
+        body: "Primordium is a bit better but still great!",
+        author: "didact@halo.com"
+      }
       ]
     },
     {
@@ -40,6 +62,18 @@
       {
         full: 'images/gem-07.gif'
       }
+      ],
+      reviews: [
+      {
+        stars: 2,
+        body: "I hate this gem!",
+        author: "joe@thomas.com"
+      },
+      {
+        stars: 1,
+        body: "Too expensive!",
+        author: "didact@halo.com"
+      }
       ]
     },
     {
@@ -49,6 +83,23 @@
       images: [
       {
         full: 'images/gem-02.gif'
+      }
+      ],
+      reviews: [
+      {
+        stars: 2,
+        body: "I hate this gem!",
+        author: "joe@thomas.com"
+      },
+      {
+        stars: 5,
+        body: "I love this gem! It's awesome!",
+        author: "bill@hill.com"
+      },
+      {
+        stars: 1,
+        body: "Too expensive!",
+        author: "didact@halo.com"
       }
       ]
     }
