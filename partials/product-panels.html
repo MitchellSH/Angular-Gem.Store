@@ -1,0 +1,20 @@
+<section>
+  <panel-tabs></panel-tabs>
+  <div class="panel" ng-show="panel.isSelected(1)">
+    <h4>Description</h4>
+    <p>{{product.description}}</p>
+  </div>
+  <div class="panel" ng-show="panel.isSelected(2)">
+    <h4>Specs</h4>
+  </div>
+  <div class="panel" ng-show="panel.isSelected(3)">
+    <h4>Reviews</h4>
+      <blockquote ng-repeat='review in product.reviews'>
+        <b>Stars: </b><b class="label label-warning">{{review.stars}}</b>
+        {{review.body}}
+        <cite class="label label-info">by: {{review.author}}</cite>
+        <cite class="label label-primary">{{review.createdOn | date}}</cite>
+      </blockquote>
+    <reviews-form></reviews-form>
+  </div>
+</section>

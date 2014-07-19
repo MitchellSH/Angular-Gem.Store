@@ -1,22 +1,19 @@
 (function(){
-  var app = angular.module('store', [ ]);
+  var app = angular.module('store', ['custom-directives']);
+  // You can name your module whatever you want, there is nothing magical about the name.
+  // In this case I used the name of 'store' for my gems store.
+
+  // js dependencies go inside the blank array('[ ]').
+
+  // For example I made a .js file for my directives which I called 'directives.js'.
+  // I included that script in the head of my HTML, and added the name to the main app.js dependencies array above.
+
+  // Think of dependencies as HTML partials but in JS form.
+
+// Controllers //-----------------------------------------
 
   app.controller('StoreController', function(){
     this.products = gems;
-
-  });
-
-  app.controller('PanelController', function(){
-    this.tab = 1;
-
-    this.selectTab = function(setTab){
-      this.tab = setTab;
-
-    };
-
-    this.isSelected = function(checkTab){
-      return this.tab === checkTab;
-    };
 
   });
 
@@ -30,6 +27,8 @@
       };
   });
 
+
+// The Store Products //-----------------------------------------
 
   var gems = [
     {
