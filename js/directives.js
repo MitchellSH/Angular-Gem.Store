@@ -1,4 +1,5 @@
 (function(){
+  // DIRECTIVES - HTML annotations that trigger JS behaviors.
   var app = angular.module('custom-directives', [ ]);
 // Custom Directives //-----------------------------------
 

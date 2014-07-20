@@ -1,4 +1,4 @@
-Angular Gem Store
+Angular Gems
 ===========
 
 My first app using Angular.js. The app simply lists

@@ -1,4 +1,6 @@
 (function(){
+  // MODULES - Where we write pieces of our Angular application.
+  // Modules can also use other modules in their dependencies array('[ ]').
   var app = angular.module('store', ['custom-directives']);
   // You can name your module whatever you want, there is nothing magical about the name.
   // In this case I used the name of 'store' for my gems store.
@@ -11,7 +13,7 @@
   // Think of dependencies as HTML partials but in JS form.
 
 // Controllers //-----------------------------------------
-
+  // CONTROLLERS - Where we define our app's behavior by defining functions and values.
   app.controller('StoreController', function(){
     this.products = gems;
 
